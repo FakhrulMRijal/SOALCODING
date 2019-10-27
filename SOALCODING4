@@ -1,0 +1,306 @@
+/*
+  SELECT OPTION
+  Select Option adalah sebuah fungsi untuk mengambil nilai tengah atau median dari
+  array hasil kelipatan dari keynya.
+  Fungsi akan menerima parameter berupa array dan key yang ingin dicari.
+
+  EXAMPLE
+  INPUT: array = [1, 2, 3, 4, 5, 6, 7], key = 2
+  PROCESS: [2, 4, 6] adalah array yang merupakan kelipatan 2
+  MEDIAN: 4
+  OUTPUT: 4 adalah nilai median dari array di process
+
+  INPUT: array = [1, 2, 3, 4, 5, 6], key = 1
+  PROCESS: [1, 2, 3, 4, 5, 6] adalah array yang merupakan kelipatan 1
+  MEDIAN: (3 + 4)/2
+  OUTPUT: 3.5 adalah nilai tengah dari array di process
+
+  RULES:
+  1. Tidak boleh menggunakan built in function selain .push(), Math, dan .unshift()
+  2. WAJIB menggunakan PSEUDOCODE
+*/
+
+function selectOption(array, key) {
+  // code below here
+}
+
+TEST CASE
+// console.log(selectOption([1, 2, 3, 4, 5, 6, 7], 2)) // 4
+// console.log(selectOption([1, 2, 3, 4, 5, 6], 1)) // 3.5
+// console.log(selectOption([1, 2, 3, 4, 5, 6], 3)) // 4.5
+// console.log(selectOption([1, 2, 3, 4, 5, 6], 4)) // 4
+// console.log(selectOption([1, 2, 3, 4, 5, 6], 7)) // There's not option
+
+
+// 2. /*
+  HEROES
+  Heroes adalah sebuah fungsi untuk menentukkan karakter apa saja yang disukai
+  orang sehingga yang duplikat tidak perlu dicatat.
+  Fungsi akan menerima parameter berupa string
+
+  EXAMPLE
+  INPUT: "saitama&&naruto&&nobita&&nobita&&saitama&&sasuke"
+  OUTPUT: [saitama, naruto, nobita, sasuke]
+
+  RULES:
+  1. Tidak boleh menggunakan built in function selain .push(), .unshift()
+*/
+
+function Heroes(hero) {
+  // code below here
+  }
+  
+  /*
+  HEROES
+  Heroes adalah sebuah fungsi untuk menentukkan karakter apa saja yang disukai
+  orang sehingga yang duplikat tidak perlu dicatat.
+  Fungsi akan menerima parameter berupa string
+
+  EXAMPLE
+  INPUT: "saitama&&naruto&&nobita&&nobita&&saitama&&sasuke"
+  OUTPUT: [saitama, naruto, nobita, sasuke]
+
+  RULES:
+  1. Tidak boleh menggunakan built in function selain .push(), .unshift()
+*/
+
+function Heroes(hero) {
+  // code below here
+  
+  }
+  
+  // TEST CASE
+// console.log(Heroes("saitama&&naruto&&nobita&&nobita&&saitama&&sasuke"))
+// // [ 'saitama', 'naruto', 'nobita', 'sasuke' ]
+// console.log(Heroes("doraemon&&sakura&&inuyasha&&saitama&&shoji&&ikan indosiar"))
+// // [ 'doraemon', 'sakura', 'inuyasha', 'saitama', 'shoji', 'ikan indosiar' ]
+// console.log(Heroes(""))
+// // There's no heroes
+
+// 3. /*
+  /////////////////////
+  2ND WINNER GUILD WARS
+  /////////////////////
+
+  Function Guild Wars akan menentukkan juara ke-2 dalam bentuk string, dari peringkat 1 ke 4.
+  Jumlah peserta selalu array dengan length 4.  
+
+  EXAMPLE
+  INPUT: ['OOOO', 'ooOO', 'o', 'OOo']
+  INFO:
+  - O dihitung 2 
+  - o dihitung 1
+  GUIDE: 
+  - Awal Sisi Kiri: (Tim 1 vs Tim 2) dan Sisi Kanan: (Tim 3 vs Tim 4)
+  - Pemenang dari Sisi Kiri vs pemenang dari Sisi Kanan menghasilkan juara 1 dan 2
+  - Yang kalah dari Sisi Kiri vs yang kalah dari Sisi Kanan menghasilkan juara 3 dan 4
+  PROCESS:
+  - Sisi Kiri => OOOO vs ooOO => OOOO (win), ooOO (lose)
+  - Sisi Kanan => o vs OOo => o (lose), OOo (win)
+  - Winner vs Winner => OOOO vs OOo => OOOO (1), OOo (2)
+  - Loser vs Loser => ooOO vs o => ooOO(3), o (4)
+  - Urutan pemenang [OOOO, OOo, ooOO, o]
+  OUTPUT:
+  Juara Ke-2 adalah tim OOo
+
+  RULES:
+  1. Jumlah yang bertanding selalu 4 tim
+  2. Asumsi total kekuatan di setiap tim tidak ada yang sama
+*/
+
+function guildWars(guilds) {
+    // code here
+    }
+    
+    /*
+  /////////////////////
+  2ND WINNER GUILD WARS
+  /////////////////////
+
+  Function Guild Wars akan menentukkan juara ke-2 dalam bentuk string, dari peringkat 1 ke 4.
+  Jumlah peserta selalu array dengan length 4.  
+
+  EXAMPLE
+  INPUT: ['OOOO', 'ooOO', 'o', 'OOo']
+  INFO:
+  - O dihitung 2 
+  - o dihitung 1
+  GUIDE: 
+  - Awal Sisi Kiri: (Tim 1 vs Tim 2) dan Sisi Kanan: (Tim 3 vs Tim 4)
+  - Pemenang dari Sisi Kiri vs pemenang dari Sisi Kanan menghasilkan juara 1 dan 2
+  - Yang kalah dari Sisi Kiri vs yang kalah dari Sisi Kanan menghasilkan juara 3 dan 4
+  PROCESS:
+  - Sisi Kiri => OOOO vs ooOO => OOOO (win), ooOO (lose)
+  - Sisi Kanan => o vs OOo => o (lose), OOo (win)
+  - Winner vs Winner => OOOO vs OOo => OOOO (1), OOo (2)
+  - Loser vs Loser => ooOO vs o => ooOO(3), o (4)
+  - Urutan pemenang [OOOO, OOo, ooOO, o]
+  OUTPUT:
+  Juara Ke-2 adalah tim OOo
+
+  RULES:
+  1. Jumlah yang bertanding selalu 4 tim
+  2. Asumsi total kekuatan di setiap tim tidak ada yang sama
+*/
+
+function guildWars(guilds) {
+    // code here
+    
+   }
+   
+   console.log(guildWars(['OOOO', 'ooOO', 'o', 'OOo']))
+  // // Juara ke-2 adalah tim OOo
+  // console.log(guildWars(['OO', 'OOO', 'ooOOO', 'OOOo']))
+  // // Juara ke-2 adalah tim OOO
+  // console.log(guildWars(['ooo', 'oooo', 'oo', 'o']))
+  // // Juara ke-2 adalah tim oo
+  
+  // 4./*
+  ////
+  go2D
+  ////
+
+  Function go2D akan menentukkan lokasi 2D dari go dalam koordinat, fungsi ini akan menerima
+  parameter pertama koordinat i, parameter kedua koordinat j, serta array yang merupakan pergerakkan.
+  Pergerakkan hanya ada 4 arah yaitu, 'UP', 'DOWN', 'LEFT', atau 'RIGHT'.
+
+  EXAMPLE
+  INPUT: posI = 3, posJ = 3, movements = ['UP', 'RIGHT', 'DOWN']
+  EXAMPLE:
+    i\j  0  1  2  3  4
+     0
+     1
+     2            1  2
+     3            go 3
+     4
+  PROCESS:
+  - go bergerak kearah 'UP' 2, 3
+  - go bergerak kearah 'RIGHT' 2, 4
+  - go bergerak kearah 'DOWN' 3, 4
+  OUTPUT:
+  [
+    [' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', '1', '2'],
+    [' ', ' ', ' ', 'go', '3'],
+    [' ', ' ', ' ', ' ', ' ']
+  ]
+
+  RULES:
+  1. Asumsi koordinat 4 * 4 dan go tidak pernah bergerak ke luar koordinat 4 x 4
+  2. Asumsi go tidak pernah melangkah ke tempat yang sama
+*/
+
+function go2D (posI, posJ, movements) {
+    var positions = [
+      [' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ']
+    ]
+    // code here
+  }
+  
+  // console.log(go2D(3, 3, ['UP', 'RIGHT', 'DOWN']))
+  // // [ [ ' ', ' ', ' ', ' ', ' ' ],
+  // //   [ ' ', ' ', ' ', ' ', ' ' ],
+  // //   [ ' ', ' ', ' ', '1', '2' ],
+  // //   [ ' ', ' ', ' ', 'go', '3' ],
+  // //   [ ' ', ' ', ' ', ' ', ' ' ] ]
+  // console.log(go2D(2, 2, ['UP', 'LEFT', 'UP']))
+  // // [ [ ' ', '3', ' ', ' ', ' ' ],
+  // //   [ ' ', '2', '1', ' ', ' ' ],
+  // //   [ ' ', ' ', 'go', ' ', ' ' ],
+  // //   [ ' ', ' ', ' ', ' ', ' ' ],
+  // //   [ ' ', ' ', ' ', ' ', ' ' ] ]
+  // console.log(go2D(2, 3, ['DOWN', 'LEFT', 'LEFT', 'UP', 'UP']))
+  // // [ [ ' ', ' ', ' ', ' ', ' ' ],
+  // //   [ ' ', '5', ' ', ' ', ' ' ],
+  // //   [ ' ', '4', ' ', 'go', ' ' ],
+  // //   [ ' ', '3', '2', '1', ' ' ],
+  
+  // 5./*
+  //////////////////
+  SUPER SHOOT SOCCER
+  //////////////////
+
+  Function Super Shot Soccer akan menunjukkan juara dari kompetisi sepak bola. Fungsi ini
+  akan menerima parameter berupa array of object, dan mengembalikkan nilai berupa object urutan juara.
+
+  EXAMPLE
+  INPUT: [
+    {Name: 'Hideous', Power: 100, Club: 'Germany'},
+    {Name: 'Sakuragi', Power: 84, Club: 'Japan'},
+    {Name: 'Kira', Power: 40, Club: 'Korea'},
+    {Name: 'Andre', Power: 59, Club: 'Egypt'}
+  ]
+  NOTES: 
+    - Juara ditentukkan berdasarkan nilai powernya
+    - Input array of object selalu ada value object orangnya
+  PROCESS:
+    - Germany => 100
+    - Japan => 84
+    - Korea => 40
+    - Egypt => 59
+  OUTPUT: {
+    'Juara 1': 'Germany',
+    'Juara 2': 'Japan',
+    'Juara 3': 'Egypt',
+    'Juara 4': 'Korea'
+  }
+
+  RULES:
+    - Hanya boleh menggunakan built in function .push()
+    - Asumsi setiap club tidak akan memiliki lebih dari 1 pemain
+    - Asumsi jumlah power dari setiap club berbeda
+*/
+
+function superShootSoccer(players) {
+  // code here
+  }
+  
+   // console.log(superShootSoccer([
+  //   {Name: 'Hideous', Power: 100, Club: 'Germany'},
+  //   {Name: 'Sakuragi', Power: 84, Club: 'Japan'},
+  //   {Name: 'Kira', Power: 40, Club: 'Korea'},
+  //   {Name: 'Andre', Power: 59, Club: 'Egypt'}
+  // ]))
+  // // { 'Juara 1': 'Germany',
+  //   'Juara 2': 'Japan',
+  //   'Juara 3': 'Egypt',
+  //   'Juara 4': 'Korea' }
+  
+  // console.log(superShootSoccer([
+  //   {Name: 'Hideous', Power: 20, Club: 'Germany'},
+  //   {Name: 'Sakuragi', Power: 77, Club: 'Japan'},
+  //   {Name: 'Kira', Power: 41, Club: 'Korea'},
+  //   {Name: 'Andre', Power: 84, Club: 'Egypt'}
+  // ]))
+  // // { 'Juara 1': 'Egypt',
+  //   'Juara 2': 'Japan',
+  //   'Juara 3': 'Korea',
+  //   'Juara 4': 'Germany' }
+  
+  // 6./*
+  PARSE NUMBER
+  Parse Number adalah sebuah fungsi untuk memecah atau menguraikan suatu angka. Fungsi akan
+  menerima parameter berupa angka dan keluaran berupa string uraian angka.
+
+  EXAMPLE
+  INPUT: 4321
+  OUTPUT: 4000+300+20+1
+
+  RULES:
+  1. Wajib menggunakan rekursif!
+  2. Tidak boleh menambahkan parameter dan function baru
+*/
+
+function parseNumber(equation) {
+  // code here
+}
+
+//console.log(parseNumber(3333)) // 3000+300+30+3
+//console.log(parseNumber(90)) // 90
+//console.log(parseNumber(2333)) // 2000+300+30+3
+    
